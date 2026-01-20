@@ -33,6 +33,7 @@ Real-World Scenarios:
 """
 
 
+
 """
 In software design, the "Factory" pattern is typically categorized into three main types based on their level of abstraction and complexity. 
 

@@ -6,7 +6,7 @@ Instead of using massive conditional statements (if/elif/else) to select behavio
 Key Components
 - Strategy Interface: A common interface (often an Abstract Base Class) that defines the method(s) all concrete strategies must implement.
 - Concrete Strategies: Classes that implement specific versions of the algorithm (e.g., CreditCardPayment, PayPalPayment).
-- Context: The class that uses a strategy. it maintains a reference to a strategy object and calls its method without needing to know the implementation details. 
+- Context: The class that uses a strategy. it maintains a reference(through composition or dependency injection) to a strategy object and calls its method without needing to know the implementation details. 
 
 
 
