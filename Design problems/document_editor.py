@@ -144,5 +144,11 @@ print(document_editor_obj.render_document())
 document_editor_obj.save() # currently uses file storage
 
 
+# Interview Tips:
+
+# In real time situation it's not possible to follow 100% SOLID principles all the time, there will be definitely some tradeoffs with every design, it's just that interviewer and the candidate should agree that those tradeoffs are acceptable.
+
+# Sometimes a class might have knowledge of many neighboring classes and objects and that's fine until it follows the principle of least knowledge. Just because it has knowledge of multiple classes does not mean that it's breaking a single responsibility principle.
+
 
 
