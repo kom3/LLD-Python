@@ -2,6 +2,8 @@ In **LLD (Low-Level Design) interviews**, interviewers mainly evaluate how you *
 
 ---
 
+## You can approach the design with either Top-Down approach or the Bottom-Up approach
+
 ## 1. Clarify Requirements (Very Important)
 
 Before designing anything:
