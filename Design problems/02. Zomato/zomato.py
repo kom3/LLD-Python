@@ -1,10 +1,12 @@
-# 1. Requirements gathering
-# 2. Identify core entities like classes and objects
-# 3. Draw a UML Class diagrams and establish the relations
-# 4. Align with the interviewer about the flow
-# 5. Zoom in to 1-2 core components(writing pseudo code/working code depends on the interviewer ask)
-
 """
+1. Requirements gathering: Functional & Non functional
+2. Identify core entities like classes and objects
+3. Draw a UML Class diagrams and establish the relations
+4. Align with the interviewer about the flow
+5. Zoom in to 1-2 core components(writing pseudo code/working code depends on the interviewer ask)
+
+
+
 To design a system like Zomato in an hour for a Low-Level Design (LLD) interview, focus on the Order Placement and Tracking flow. This allows you to demonstrate the most critical design patterns and SOLID principles.
 
 Core Design Patterns Used

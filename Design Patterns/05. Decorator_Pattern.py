@@ -28,7 +28,8 @@ class PlainCoffee(Coffee):
     def get_cost(self):
         return 2.0
 
-# 3. Base Decorator (Abstract)
+# 3. Base Decorator (Abstract) 
+# Normally Base Decorators contain both "has-a"(composition) and "is-a"(inheritance) relationships
 class CoffeeDecorator(Coffee):
     def __init__(self, coffee: Coffee):
         self._coffee = coffee
