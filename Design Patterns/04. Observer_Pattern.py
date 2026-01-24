@@ -3,8 +3,8 @@
 
 Core Components:
 - The pattern consists of four primary elements:
-    - Subject (Interface/Abstract Class): Defines methods to attach, detach, and notify observers.
-    - Concrete Subject: The actual object being "observed" (e.g., a Weather Station or Stock Market). It stores the state and triggers the notification method when that state changes.
+    - Subject/Observable (Interface/Abstract Class): Defines methods to attach, detach, and notify observers.
+    - Concrete Subject/Observable: The actual object being "observed" (e.g., a Weather Station or Stock Market). It stores the state and triggers the notification method when that state changes.
     - Observer (Interface/Abstract Class): Defines an update() method that the subject calls to push notifications.
     - Concrete Observer: Objects that react to the subject's updates (e.g., a Phone Display or Email Alert system). 
 """
@@ -18,8 +18,8 @@ class Observer(ABC):
     def update(self, temperature: float):
         pass
 
-# 2. Subject Interface
-class Subject(ABC):
+# 2. Subject/Observable Interface
+class Observable(ABC):
     @abstractmethod
     def attach(self, observer: Observer):
         pass
@@ -32,8 +32,8 @@ class Subject(ABC):
     def notify(self):
         pass
 
-# 3. Concrete Subject
-class WeatherStation(Subject):
+# 3. Concrete Subject/Observable
+class WeatherStation(Observable):
     def __init__(self):
         self._observers = []
         self._temperature = 0.0
