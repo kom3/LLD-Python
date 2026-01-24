@@ -84,7 +84,7 @@ class OrderManager:
 
     def __new__(cls):
         if cls._instance is None:
-            cls._instance = super().__new__(cls)
+            cls._instance = super().__new__(cls) # Create a new instance whose blueprint is cls. This becomes: object.__new__(OrderManager) --> Parent class(default class which is Object class), please allocate memory for an object of type cls(which is OrderManager).”
             cls._instance.orders = {}
         return cls._instance
 
