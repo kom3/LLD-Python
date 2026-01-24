@@ -78,6 +78,7 @@ class Order:
         for observer in self._observers:
             observer.update(self.order_id, self.status)
 
+
 # --- 5. Singleton Managers ---
 class OrderManager:
     _instance = None
