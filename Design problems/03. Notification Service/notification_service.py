@@ -116,7 +116,7 @@ class NotificationLogger(NotificationObserver):
         self._notification_center = notification_center
 
     def update(self):
-        print(f"Logging notification message: {self._notification_center.get_notification()}")
+        print(f"Logging notification message: {self._notification_center.get_notification()}\n")
 
 
 # @@@ Notification strategy abstract class
@@ -132,7 +132,7 @@ class EmailNotification(NotificationStrategy):
         self.email_id = email_id
 
     def send_notification(self, msg: str):
-        print(f"Sending Email to {self.email_id} with notification message: {msg}")
+        print(f"Sending Email to {self.email_id} with notification message: {msg}\n")
 
 
 # @@@ Notification SMS Strategy Concrete class
@@ -141,13 +141,13 @@ class SMSNotification(NotificationStrategy):
         self.mobile_no = mobile_no
 
     def send_notification(self, msg: str):
-        print(f"Sending SMS to {self.mobile_no} with notification message: {msg}")
+        print(f"Sending SMS to {self.mobile_no} with notification message: {msg}\n")
 
 
 # @@@ Notification Popup Strategy Concrete class
 class PopupNotification(NotificationStrategy):
     def send_notification(self, msg: str):
-        print(f"Triggering Popup with notification message: {msg}")
+        print(f"Triggering Popup with notification message: {msg}\n")
 
 
 # @@@ Notification Engine class
@@ -223,5 +223,6 @@ if __name__ == "__main__":
     notifications = [notification1, notification2]
     for nt in notifications:
         notification_service.send_notification(nt)
+        print("-"*100, end="\n\n")
 
 
