@@ -226,3 +226,25 @@ if __name__ == "__main__":
         print("-"*100, end="\n\n")
 
 
+
+
+# Output
+# Logging notification message: << 1769304229.313753 :: You got a new subscriber! :: signed_by: Notification Service >>
+
+# Sending Email to manjunath@gmail.com with notification message: << 1769304229.313753 :: You got a new subscriber! :: signed_by: Notification Service >>
+
+# Triggering Popup with notification message: << 1769304229.313753 :: You got a new subscriber! :: signed_by: Notification Service >>
+
+# Sending SMS to +91 1112223334 with notification message: << 1769304229.314753 :: You got a new subscriber! :: signed_by: Notification Service >>
+
+# ----------------------------------------------------------------------------------------------------
+
+# Logging notification message: << 1769304229.314753 :: You got a new Like! :: signed_by: Notification Service >>
+
+# Sending Email to manjunath@gmail.com with notification message: << 1769304229.314753 :: You got a new Like! :: signed_by: Notification Service >>
+
+# Triggering Popup with notification message: << 1769304229.314753 :: You got a new Like! :: signed_by: Notification Service >>
+
+# Sending SMS to +91 1112223334 with notification message: << 1769304229.314753 :: You got a new Like! :: signed_by: Notification Service >>
+
+# ----------------------------------------------------------------------------------------------------
